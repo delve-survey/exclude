@@ -1,0 +1,4 @@
+#Nite           Exposure        Problem
+20130816        226942          cloud
+20130816        227005          cloud
+20130818        227850          cloud
