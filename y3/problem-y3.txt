@@ -1,0 +1,2 @@
+#Nite           Exposure        Problem
+20150917        475957          Ghosting
