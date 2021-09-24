@@ -1,0 +1,4 @@
+#Nite           Exposure        Problem
+20180308        728257          Orion
+20180308        728258          Orion
+20180426        739472          Ghosting
