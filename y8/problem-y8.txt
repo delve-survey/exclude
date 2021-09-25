@@ -1,0 +1,7 @@
+#Nite           Exposure        Problem
+20201025        948804          Flame Nebula
+20201025        948871          Flame Nebula
+20201118        955742          Flame Nebula
+20201119        956059          Orion Nebula
+20201119        956063          Flame Nebula
+20210205        963888          Flame Nebula

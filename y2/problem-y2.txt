@@ -1,0 +1,13 @@
+#Nite           Exposure        Problem
+20140716        337870          Fringing
+20140716        337871          Fringing
+20141024        371184          Ghosting
+20141024        371185          Ghosting
+20141024        371186          Ghosting
+20141024        371189          Ghosting
+20141024        371190          Ghosting
+20141024        371191          Ghosting
+20141207        385151          Fringing
+20141207        385152          Fringing
+20141207        385153          Fringing
+20141207        385154          Fringing

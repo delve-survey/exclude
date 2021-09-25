@@ -1,0 +1,6 @@
+#Nite           Exposure        Problem
+20200207        931169          Flame Nebula
+20200207        931177          Flame Nebula
+20200211        932658          Flame Nebula
+20200306        941654          Flame Nebula
+20200315        943309          Flame Nebula
