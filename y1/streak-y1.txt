@@ -1,3 +1,4 @@
+#date     expnum ccd id ccdnum
 #Airplane
 20131102  250171 nan nan   3
 20131102  250171 nan nan   6
