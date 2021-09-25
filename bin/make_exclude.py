@@ -10,6 +10,8 @@ import fitsio
 
 CCDNUMS = np.arange(1,63)
 
+# python bin/make_exclude.py y*/*.txt -o exclude_YYYYMMDD.fits
+
 if __name__ == "__main__":
     import argparse
     parser = argparse.ArgumentParser(description=__doc__)
