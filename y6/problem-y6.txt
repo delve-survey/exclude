@@ -1,3 +1,14 @@
 #Nite           Exposure        Problem
 20190205        820116          Orion
 20190205        820117          Orion
+20190303        829780          Arcturus
+20190304        830079          Arcturus
+20190122        814757          NObjects
+20190122        814758          NObjects
+20190122        814759          NObjects
+20190122        814760          NObjects
+20190122        814764          NObjects
+20190214        823573          NObjects
+20190512        857444          NObjects
+20190606        862944          NObjects
+20190728        879871          NObjects

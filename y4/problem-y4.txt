@@ -1,3 +1,15 @@
 #Nite           Exposure        Problem
 20161030        588121          Blank
 20161030        588125          Blank
+20170329        635289          Arcturus
+20161230        605732          NObjects
+20170211        619644          NObjects
+20170211        619645          NObjects
+20170211        619647          NObjects
+20170228        624606          NObjects
+20170302        625432          NObjects
+20170306        626806          NObjects
+20170329        635272          NObjects
+20170603        653181          NObjects
+20171006        684541          NObjects 
+20171006        684543          NObjects 

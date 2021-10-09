@@ -1,2 +1,4 @@
 #Nite           Exposure        Problem
 20150917        475957          Ghosting
+20160608        548254          Arcturus        
+20160608        548256          Arcturus
