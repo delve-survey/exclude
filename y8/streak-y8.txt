@@ -1,0 +1,4 @@
+#date     expnum ccd id ccdnum
+# Iridium flare?
+20210325  977534 nan nan   43
+20210325  977534 nan nan   49

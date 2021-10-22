@@ -1,0 +1,9 @@
+#date     expnum ccd id ccdnum
+20151011  483951 nan nan   25
+20151011  483951 nan nan   32
+20151011  483951 nan nan   39
+20151011  483951 nan nan   45
+20151011  483951 nan nan   51
+20151011  483951 nan nan   56
+20151011  483951 nan nan   60
+
