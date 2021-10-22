@@ -1,6 +1,8 @@
 #!/usr/bin/env python
 """
 Convert exclude files to single expnum,ccdnum list.
+
+> python bin/make_exclude.py y*/*.txt -o delve_exclude_YYYYMMDD.fits
 """
 __author__ = "Alex Drlica-Wagner"
 
@@ -9,8 +11,6 @@ import pandas as pd
 import fitsio
 
 CCDNUMS = np.arange(1,63)
-
-# python bin/make_exclude.py y*/*.txt -o exclude_YYYYMMDD.fits
 
 if __name__ == "__main__":
     import argparse
