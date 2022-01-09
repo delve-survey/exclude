@@ -11,6 +11,7 @@ import pandas as pd
 import fitsio
 
 CCDNUMS = np.arange(1,63)
+DTYPE = [('EXPNUM', '>i4'), ('CCDNUM','>i2'), ('REASON','S30'), ('ANALYST','S30')]
 
 if __name__ == "__main__":
     import argparse
@@ -31,8 +32,10 @@ if __name__ == "__main__":
             ccdnum.append(np.tile(CCDNUMS,len(d['Exposure'])))
             reason.append(np.repeat(d['Problem'],62))
         else:
-            # other files list expnum,ccdnum
-            df = pd.read_csv(f,delim_whitespace=True)
+            # Other files expected to have at least expnum,ccdnum
+            # Other starts with #, so that makes things complicated...
+            names = pd.read_csv(f,nrows=0,delim_whitespace=True).columns.to_list()
+            df = pd.read_csv(f,delim_whitespace=True,comment='#',names=names)
             d = df.to_records(index=False)
             expnum.append(d['expnum'])
             ccdnum.append(d['ccdnum'])
@@ -47,20 +50,19 @@ if __name__ == "__main__":
             else:
                 reason.append(len(d)*['Unknown'])
 
-    df = pd.DataFrame({
-        'EXPNUM': np.concatenate(expnum).astype(int),
-        'CCDNUM': np.concatenate(ccdnum).astype(int),
-        'REASON': np.concatenate(reason)
-    })
-    df['ANALYST'] = 'kadrlica'
-    print("Excluding %s CCDs..."%len(df))
+    expnum = np.concatenate(expnum).astype(int)
+    ccdnum = np.concatenate(ccdnum).astype(int)
+    reason = np.concatenate(reason)
+    analyst = np.repeat('kadrlica',len(reason))
+
+    data = np.rec.fromarrays([expnum,ccdnum,reason,analyst],dtype=DTYPE)
+    print("Excluding %s CCDs..."%len(data))
     
     print("Writing %s..."%args.outfile)
     if args.outfile.endswith('.csv'):
-        df.to_csv(args.outfile,index=False)
+        pd.DataFrame(data).to_csv(args.outfile,index=False)
     elif args.outfile.endswith(('.fits','.fz')):
-        fitsio.write(args.outfile,df.to_records(index=False),
-                     clobber=True)
+        fitsio.write(args.outfile,data,clobber=True)
     else:
         print("Unrecognized file extension: %s"%args.outfile)
 

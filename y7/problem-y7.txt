@@ -11,3 +11,4 @@
 20191203        913772          NObjects
 20190915        895734          Clouds
 20190915        895735          Clouds
+20200123        926371          Telescope moving

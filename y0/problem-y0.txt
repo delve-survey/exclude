@@ -34,7 +34,6 @@
 20130417        198399          Fringing
 20130417        198402          Fringing
 20130417        198403          Fringing
-20130417        198403          Fringing
 20130529        206599          Fringing
 20130529        206603          Fringing
 20130529        206604          Fringing
@@ -50,20 +49,12 @@
 20130307        184735          clouds
 20130307        184745          clouds
 20130307        184746          clouds
-20130307        184746          clouds
 20130330        192463          clouds
 20130330        192479          clouds
 20130330        192489          clouds
 20130330        192490          clouds
 20130408        195126          clouds
 20130408        195127          clouds
-20130529        206599          Fringing
-20130529        206603          Fringing
-20130529        206604          Fringing
-20130529        206605          Fringing
-20130529        206606          Fringing
-20130529        206607          Fringing
-20130529        206608          Fringing
 20130130        173765          NObjects
 20130130        173783          NObjects
 20130130        173784          NObjects
@@ -72,3 +63,4 @@
 20130319        187530          NObjects
 20130330        192407          NObjects
 20140302        289494          NObjects
+20130317        187055          NObjects

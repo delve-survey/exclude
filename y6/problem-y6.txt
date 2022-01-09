@@ -12,3 +12,9 @@
 20190512        857444          NObjects
 20190606        862944          NObjects
 20190728        879871          NObjects
+20181110        793046          NObjects
+20190206        820502          Canopus
+20180829        767009          NObjects
+20180829        767011          NObjects
+20181109        792837          NObjects
+20181129        797841          NObjects

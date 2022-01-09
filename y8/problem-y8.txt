@@ -2,7 +2,19 @@
 20201025        948804          Flame Nebula
 20201025        948871          Flame Nebula
 20201118        955742          Flame Nebula
+20201119        956023          NObjects
 20201119        956059          Orion Nebula
 20201119        956063          Flame Nebula
+20201121        956767          Flame Nebula
+20201121        956768          Flame Nebula
 20210205        963888          Flame Nebula
 20210425        989307          Wonky
+20201024        948472          Rigel 
+20201118        955704          Rigel 
+20201118        955723          Rigel 
+20201119        955993          Rigel 
+20201119        955994          Rigel 
+20201121        956765          Orion Nebula
+20201121        956767          Flame Nebula
+20201121        956768          Flame Nebula
+

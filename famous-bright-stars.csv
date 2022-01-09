@@ -1,5 +1,5 @@
 # Famous bright stars from Steve Kent & Alex Drlica-Wagner
-# https://heasarc.gsfc.nasa.gov/db-perl/W3Browse/w3table.pl?tablehead=name%3Dbsc5p
+# https://heasarc.gsfc.nasa.gov/W3Browse/star-catalog/bsc5p.html
 id,ra,dec,radius,name
 0099, 6.5708  , -42.3061, 0.0, Alpha Phoenix
 0472, 24.4288 , -57.2367, 0.0, Achernar
@@ -19,4 +19,5 @@ id,ra,dec,radius,name
 8425, 332.0583, -46.9611, 1.1, Alnair (Alpha Grus)
 8521, 335.6829, -45.9478, 0.0, pi.01 Grus
 8636, 340.6671, -46.8847, 1.1, Beta Grus
+8728, 344.4127, -29.6222, 1.5, Alrescha (Alpha Piscium)
 0000, 86.93912, -9.66960, 1.5, Saiph (Kappa Orionis)
