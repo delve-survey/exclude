@@ -6,6 +6,7 @@ __author__ = "Alex Drlica-Wagner"
 from collections import OrderedDict as odict
 from sqlalchemy import create_engine
 import pandas as pd
+import numpy as np
 
 SISPI_QUERY = """
 SELECT TO_CHAR(date-'12 hours'::INTERVAL,'YYYYMMDD')::INT AS "#nite", 
@@ -75,7 +76,7 @@ ORDER BY e.expnum
 --LIMIT 10000
 """
 
-# Note that years can only go y1 to y9
+# Note that tcl code can only accept years y1 to y9
 # To add more years, we'll need to fake it...
 # Scattered light ends 20140314 so y1 is a bit short and y2 is long
 YEARS = odict([
@@ -98,6 +99,8 @@ if __name__ == "__main__":
                         help='year to query')
     parser.add_argument('--db', default='sispi', choices=['sispi','delve'],
                         help='database for query')
+    parser.add_argument('--explist', default=None,
+                        help='exposure list to select from')
     args = parser.parse_args()
 
     if args.db.lower() in ('sispi'):
@@ -118,6 +121,11 @@ if __name__ == "__main__":
             
         query = QUERY%dict(start=start,end=end)
         df = pd.read_sql_query(query,con=engine)
+
+        if args.explist:
+            # Only select exposures in the explist
+            explist = pd.read_csv(args.explist)
+            df = df[np.in1d(df['expnum'],explist['expnum'])]
 
         outfile = 'survey-y{}.txt'.format(year)
         print("Writing {}...".format(outfile))

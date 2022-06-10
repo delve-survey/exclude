@@ -10,11 +10,16 @@
 20210205        963888          Flame Nebula
 20210425        989307          Wonky
 20201024        948472          Rigel 
+20201118        955650          Ghosting
 20201118        955704          Rigel 
 20201118        955723          Rigel 
 20201119        955993          Rigel 
 20201119        955994          Rigel 
+20201120        956325          NObjects
+20201120        956326          NObjects
+20201120        956327          NObjects
+20201120        956328          NObjects
 20201121        956765          Orion Nebula
 20201121        956767          Flame Nebula
 20201121        956768          Flame Nebula
-
+20210524        1001060         Ghosting

@@ -1,4 +1,6 @@
 #Nite           Exposure        Problem
 20210816        1026168         Ghosting
 20210817        1026566         Ghosting
+20210817        1026593         Ghosting
+20211223        1065643         NObjects
 20220108        1070324         Guider Failed

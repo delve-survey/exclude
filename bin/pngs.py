@@ -145,7 +145,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=description)
     parser.add_argument('filename',help='list of ghosts/scattered light ccds')
     parser.add_argument('urls',help='list of urls')
-    parser.add_argument('-p','--paths',default=None)
+    parser.add_argument('-p','--paths',default=None,help='paths to append to urls')
     parser.add_argument('-f','--force',action='store_true')
     parser.add_argument('-o','--outdir',default='pngs')
     args = parser.parse_args()
@@ -156,6 +156,7 @@ if __name__ == "__main__":
 
     urls = pd.read_csv(args.urls)
     if args.paths:
+        print("Adding paths from %s..."%args.paths)
         paths = pd.read_csv(args.paths)
         urls = pd.concat([urls,paths])
     urls = urls.to_records(index=False)

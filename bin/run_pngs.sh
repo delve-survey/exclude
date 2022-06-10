@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
-urls=delve-urls-v1.csv 
+#urls=delve-urls-v1.csv 
+urls=decade-urls-qa.csv
 paths=delve-paths-v0.csv
 
 #for i in 9; do
