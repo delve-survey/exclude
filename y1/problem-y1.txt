@@ -1,14 +1,15 @@
 #Nite           Exposure        Problem
-20130816        226942          cloud
-20130816        227005          cloud
-20130818        227850          cloud
-20140215        285482          fringing
-20140215        285487          fringing
-20140224        288055          fringing
-20140224        288056          fringing
+20130816        226942          Clouds 
+20130816        227005          Clouds 
+20130818        227850          Clouds 
+20140215        285482          Fringing
+20140215        285487          Fringing
+20140224        288055          Fringing
+20140224        288056          Fringing
 20140302        289494          NObjects
 20130816        226952          NObjects
 20130816        226953          NObjects
 20130816        226954          NObjects
 20131128        258479          Noisy Backplane
 20131128        258480          Noisy Backplane
+20131026        247159          Ghosting

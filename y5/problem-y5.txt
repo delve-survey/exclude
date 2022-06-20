@@ -1,6 +1,6 @@
 #Nite           Exposure        Problem
-20180308        728257          Orion
-20180308        728258          Orion
+20180308        728257          Orion Nebula
+20180308        728258          Orion Nebula
 20180218        723161          Arcturus
 20180413        735289          Sky/NObjects
 20180413        735362          Sky/NObjects
@@ -27,7 +27,7 @@
 20170926        682166          Achernar
 20170926        682170          Achernar
 20171213        704959          Canopus
-20180107        710300          GammaEri
+20180107        710300          Gamma Eri
 20180121        714186          Canopus
 20180122        714474          Canopus
 20171127        700731          Canopus
@@ -44,3 +44,4 @@
 20171211        704268          NObjects
 20180723        758330          NObjects
 20180313        730116          Ghosting
+20180106        710015          Sky Background

@@ -41,20 +41,21 @@
 20130529        206606          Fringing
 20130529        206607          Fringing
 20130529        206608          Fringing
-20121210        160199          ghosting
-20121210        160212          ghosting
-20121210        160228          ghosting
-20130307        184733          clouds
-20130307        184734          clouds
-20130307        184735          clouds
-20130307        184745          clouds
-20130307        184746          clouds
-20130330        192463          clouds
-20130330        192479          clouds
-20130330        192489          clouds
-20130330        192490          clouds
-20130408        195126          clouds
-20130408        195127          clouds
+20121210        160199          Ghosting
+20121210        160212          Ghosting
+20121210        160228          Ghosting
+20130307        184733          Clouds
+20130307        184734          Clouds
+20130307        184735          Clouds
+20130307        184745          Clouds
+20130307        184746          Clouds
+20130208        176558          Telescope Moving
+20130330        192463          Clouds
+20130330        192479          Clouds
+20130330        192489          Clouds
+20130330        192490          Clouds
+20130408        195126          Clouds
+20130408        195127          Clouds
 20130130        173765          NObjects
 20130130        173783          NObjects
 20130130        173784          NObjects
@@ -66,3 +67,5 @@
 20130317        187055          NObjects
 20121210        160199          Ghosting
 20121210        160228          Ghosting
+20130606        209637          Telescope Moving
+20130420        199985          Ghosting

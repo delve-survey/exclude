@@ -11,9 +11,11 @@
 20191203        913772          NObjects
 20190915        895734          Clouds
 20190915        895735          Clouds
-20200123        926371          Telescope moving
+20191228        923325          Telescope Moving
+20200123        926371          Telescope Moving
 20200202        929465          Ghosting
 20200316        943709          Ghosting
 20200305        941441          NObjects
 20200308        942360          NObjects
 20200201        928850          Ghosting
+

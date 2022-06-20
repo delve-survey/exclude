@@ -47,6 +47,8 @@ if __name__ == "__main__":
                 reason.append(len(d)*['Noise'])
             elif 'readout' in f:
                 reason.append(len(d)*['Readout'])
+            elif 'ccd' in f:
+                reason.append(len(d)*['Bad CCD'])
             else:
                 reason.append(len(d)*['Unknown'])
 
@@ -57,6 +59,8 @@ if __name__ == "__main__":
 
     data = np.rec.fromarrays([expnum,ccdnum,reason,analyst],dtype=DTYPE)
     print("Excluding %s CCDs..."%len(data))
+    for r,c in  zip(*np.unique(data['REASON'],return_counts=True)):
+        print("  %s: %d"%(str(r),c))
     
     print("Writing %s..."%args.outfile)
     if args.outfile.endswith('.csv'):

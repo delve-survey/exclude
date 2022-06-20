@@ -50,6 +50,9 @@
 20140813        347796          NObjects
 20140813        347798          NObjects
 20150410        431640          Ghosting
-20150529        444093          Noisy Backplane
 20150607        447666          NObjects
+20140416        301612          Telescope Moving
+20150108        396131          Telescope Moving
+20150321        424141          Telescope Moving
+20150416        433293          Ghosting
 

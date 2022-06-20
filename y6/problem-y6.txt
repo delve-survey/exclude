@@ -1,6 +1,6 @@
 #Nite           Exposure        Problem
-20190205        820116          Orion
-20190205        820117          Orion
+20190205        820116          Orion Nebula 
+20190205        820117          Orion Nebula 
 20190303        829780          Arcturus
 20190304        830079          Arcturus
 20190122        814757          NObjects
@@ -30,3 +30,9 @@
 20180809        763746          NObjects
 20180810        764228          Ghosting
 20180921        776286          Ghosting
+#20190331        844998          Rho Ophiuchi
+20181004        780739          Ghosting
+20181101        789988          Ghosting
+20181104        790944          Ghosting
+20190101        808249          Sky Background
+20190102        808551          Sky Background
