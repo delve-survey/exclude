@@ -4,3 +4,4 @@
 20210817        1026593         Ghosting
 20211223        1065643         NObjects
 20220108        1070324         Guider Failed
+20220902        1129120         Out of focus
