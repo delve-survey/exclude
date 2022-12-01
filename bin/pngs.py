@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 """
-Mapping CCDs to images
+Mapping CCD numbers to PNG images
 """
 __author__ = "Alex Drlica-Wagner"
 
@@ -86,7 +86,7 @@ def draw_png(url):
     if url.startswith('http'):
         cmd = 'wget %s -nv'%url
     else:
-        cmd = "cp %s ."%url
+        cmd = r"date '%s ' | tr -d '\n'; cp -v %s ."%('+%Y-%m-%d %H:%M:%S',url)
     subprocess.check_call(cmd,shell=True)
     image = matplotlib.image.imread(png)
     ax = plt.gca()
@@ -150,34 +150,39 @@ if __name__ == "__main__":
     parser.add_argument('-o','--outdir',default='pngs')
     args = parser.parse_args()
 
-    bl = np.genfromtxt(args.filename,names=True,dtype=int)
-    bl.dtype.names = list(map(str.upper,bl.dtype.names))
-    bl = bl[np.argsort(bl['EXPNUM'])]
+    # Load CCDs to exclude
+    exclude = np.genfromtxt(args.filename,names=True,dtype=int)
+    exclude.dtype.names = list(map(str.upper,exclude.dtype.names))
+    exclude = exclude[np.argsort(exclude['EXPNUM'])]
 
+    # Load urls to PNGs at NCSA
     urls = pd.read_csv(args.urls)
+    urls.columns = urls.columns.str.upper()
+    # Load paths to PNGs on disk
     if args.paths:
         print("Adding paths from %s..."%args.paths)
         paths = pd.read_csv(args.paths)
-        urls = pd.concat([urls,paths])
+        paths.columns = paths.columns.str.upper()
+        sel = ~np.in1d(paths['EXPNUM'],urls['EXPNUM'])
+        urls = pd.concat([urls,paths[sel]])
     urls = urls.to_records(index=False)
-    urls.dtype.names = list(map(str.upper,urls.dtype.names))
     urls = urls[np.argsort(urls['EXPNUM'])]
-    urls = urls[np.in1d(urls['EXPNUM'],np.unique(bl['EXPNUM']))]
+    urls = urls[np.in1d(urls['EXPNUM'],np.unique(exclude['EXPNUM']))]
 
-    sel = np.in1d(bl['EXPNUM'],urls['EXPNUM'])
-    nexclude = len(np.unique(bl['EXPNUM']))
-    nfound = len(np.unique(bl['EXPNUM'][sel]))
-    nmissing = len(np.unique(bl['EXPNUM'][~sel]))
-    print("Total number of excluded exposures: %s"%nexclude)
-    print("Found urls for %s exposures."%nfound)
-    print("Missing urls for %s exposures"%nmissing)
+    sel = np.in1d(exclude['EXPNUM'],urls['EXPNUM'])
+    nexclude = len(np.unique(exclude['EXPNUM']))
+    nfound = len(np.unique(exclude['EXPNUM'][sel]))
+    nmissing = len(np.unique(exclude['EXPNUM'][~sel]))
+    print("Total number of exposures to exclude: %s"%nexclude)
+    print("Found urls/paths for %s exposures."%nfound)
+    print("Missing urls/paths for %s exposures"%nmissing)
 
     outdir = args.outdir
     if not os.path.exists(outdir):
         os.makedirs(outdir)
 
     for i,(expnum,url) in enumerate(urls):
-        print("(%i/%i)"%(i+1,len(urls)))
+        print("(%i/%i): %i"%(i+1,len(urls),expnum))
         outfile = os.path.join(outdir,os.path.basename(url).replace('_TN',''))
 
         if os.path.exists(outfile) and not args.force:
@@ -193,8 +198,8 @@ if __name__ == "__main__":
      
         fov = np.zeros_like(image)
         ret = fov_geometry(size=fov.shape[::-1])
-        badccds = bl['CCDNUM'][bl['EXPNUM'] == expnum].astype(int)
-        print("Exclude CCDs:",badccds)
+        badccds = exclude['CCDNUM'][exclude['EXPNUM'] == expnum].astype(int)
+        print("Excluded CCDs:",badccds)
         plt.sca(ax[-1])
         draw_fov(fov,ccds=badccds)
 
@@ -202,4 +207,3 @@ if __name__ == "__main__":
         plt.savefig(outfile,bbox_inches='tight')
         plt.close()
 
-#plt.ion()

@@ -23,7 +23,8 @@ FROM exposure
 WHERE 
 TO_CHAR(date-'12 hours'::INTERVAL,'YYYYMMDD')::INT between %(start)s AND %(end)s
 AND filter in ('g','r','i','z') and exptime >= 30
-AND flavor = 'object' AND discard = False AND delivered = True
+AND flavor = 'object' AND discard = False 
+-- AND delivered = True -- this doesn't seem necessary
 AND propid NOT IN (
     '2012B-0001', -- DES WIDE
     '2012B-0002', -- DES SN
@@ -89,7 +90,8 @@ YEARS = odict([
     (6, [20180801,20190801]),
     (7, [20190801,20200801]),
     (8, [20200801,20210801]),
-    (9, [20210801,20220801]),
+    #(9, [20210801,20220801]),
+    (9, [20210801,20230101]),
 ])    
 
 if __name__ == "__main__":
@@ -125,8 +127,10 @@ if __name__ == "__main__":
         if args.explist:
             # Only select exposures in the explist
             explist = pd.read_csv(args.explist)
+            explist.columns= explist.columns.str.lower()
             df = df[np.in1d(df['expnum'],explist['expnum'])]
 
         outfile = 'survey-y{}.txt'.format(year)
         print("Writing {}...".format(outfile))
         df.to_csv(outfile,index=False,sep='\t')
+        if not len(df): print("... no exposures in output file.")
