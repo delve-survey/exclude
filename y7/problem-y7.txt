@@ -18,4 +18,19 @@
 20200305        941441          NObjects
 20200308        942360          NObjects
 20200201        928850          Ghosting
-
+20191007        901372          Mirror Issue
+20191007        901373          Mirror Issue
+20191205        914634          Observer Marked
+20191206        915133          Observer Marked
+20200127        927274          Observer Marked
+20200205        930527          Active Optics Failed
+20200205        930558          Active Optics Failed
+20200207        931263          VSUB Off
+20200207        931264          VSUB Off
+20200207        931265          VSUB Off
+20201106        952513          Dome Obscuration
+20201120        956410          Observer Marked
+20201125        957863          Hexapod Update
+20201125        958045          Hexapod Update
+20201125        958050          Hexapod Update 
+20201125        958055          Hexapod Update 

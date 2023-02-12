@@ -36,3 +36,4 @@
 20181104        790944          Ghosting
 20190101        808249          Sky Background
 20190102        808551          Sky Background
+20190627        868123          High Wind
