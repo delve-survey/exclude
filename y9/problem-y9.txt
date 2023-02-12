@@ -9,3 +9,4 @@
 20221016        1141837         Junk
 20220903        1129817         Ghosting
 20220903        1129818         Ghosting
+20221225        1159486         Telescope Moving
