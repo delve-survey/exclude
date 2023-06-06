@@ -69,3 +69,4 @@
 20121210        160228          Ghosting
 20130606        209637          Telescope Moving
 20130420        199985          Ghosting
+20130410        195507          Readout
