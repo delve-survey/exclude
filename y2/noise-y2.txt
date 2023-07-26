@@ -31,5 +31,3 @@
 20150529 444093  nan nan  46
 20150529 444093  nan nan  51
 20150529 444093  nan nan  56
-# Corrupted Flat
-20140719 339224  nan nan  32
