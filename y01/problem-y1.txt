@@ -13,3 +13,4 @@
 20131128        258479          Noisy Backplane
 20131128        258480          Noisy Backplane
 20131026        247159          Ghosting
+20140418        302366          Telescope Moving
