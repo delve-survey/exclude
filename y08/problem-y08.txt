@@ -70,3 +70,6 @@
 20210219        966644          Telescope Tracking 
 20210219        966645          Telescope Tracking 
 20220207        1078687         Power Outage
+20210717        1017270         Scattered Light
+20210817        1026572         Scattered Light
+20210921        1035870         Ghosting

@@ -1,4 +1,7 @@
 #Nite           Exposure        Problem
+20121102        145846          Telescope Moving
+20121103        146656          Bad Backplane
+20121103        146657          Bad Backplane
 20121107        148661          Fringing
 20121107        148664          Fringing
 20121107        148667          Fringing

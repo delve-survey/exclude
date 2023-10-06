@@ -143,9 +143,9 @@ if __name__ == "__main__":
     import argparse
     description = __doc__
     parser = argparse.ArgumentParser(description=description)
-    parser.add_argument('filename',help='list of ghosts/scattered light ccds')
-    parser.add_argument('urls',help='list of urls')
-    parser.add_argument('-p','--paths',default=None,help='paths to append to urls')
+    parser.add_argument('filename', help='list of ghosts/scattered light CCDs')
+    parser.add_argument('urls', help='list of urls to TN pngs')
+    parser.add_argument('-p','--paths', default=None, help='paths to append to urls')
     parser.add_argument('-f','--force',action='store_true')
     parser.add_argument('-o','--outdir',default='pngs')
     args = parser.parse_args()

@@ -14,8 +14,9 @@ Assemble webpages:
 
 Compile the final list of excluded CCDs:
 
-python bin/make_exclude.py y*/*.txt -o delve_exclude_YYYYMMDD.fits
+python bin/make_exclude_list.py y*/*.txt -o delve_exclude_YYYYMMDD.fits
 
 Upload list to desdm
 
 easyaccess -s decade -lt delve_exclude_YYYYMMDD.fits
+easyaccess -s decade -c "grant select on DELVE_EXCLUDE_YYYYMMDD to PUBLIC;"

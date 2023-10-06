@@ -1,0 +1,2 @@
+#date     expnum ccd id ccdnum
+20151227  506313 nan nan  47

@@ -31,7 +31,7 @@
 20180121        714186          Canopus
 20180122        714474          Canopus
 20171127        700731          Canopus
-20170830        673710          NObjects
+20170830        673710          Bad Astrometry
 20170907        675756          NObjects
 20170907        675760          NObjects
 20170907        675762          NObjects

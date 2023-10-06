@@ -77,6 +77,42 @@ ORDER BY e.expnum
 --LIMIT 10000
 """
 
+DECADE_QUERY = """
+SELECT e.nite AS "#nite", 
+       e.expnum, 
+       e.radeg AS ra, 
+       e.decdeg AS dec, 
+       e.band AS fil, 
+       e.exptime AS exp, 
+       '{'||substr(e.object, 0, 21)||'}' AS object,
+       e.airmass AS secz, 
+       SUBSTR(date_obs,12,5) AS ut, 
+       'good' as status
+FROM exposure e, qa_summary q
+WHERE 
+e.expnum = q.expnum
+AND e.nite between %(start)s AND %(end)s
+AND e.band in ('g','r','i','z') and e.exptime >= 30
+AND e.obstype = 'object'
+AND q.t_eff > 0.1 and q.psf_fwhm < 2.0
+AND e.propid NOT IN (
+    '2012B-0001', -- DES WIDE
+    '2012B-0002', -- DES SN
+    '2012B-0003', -- DES SV
+    '2012B-0004', -- DECAM SV SN
+    '2012B-9996', -- DES DC7
+    '2012B-9997', -- DECam Test
+    '2012B-9998', -- DECam Test
+    '2012B-9999', -- Commissioning
+    '2013A-9999', -- Engineering
+    '2014A-9000'  -- Standards
+)
+AND e.expnum NOT BETWEEN 222736 AND 223265 -- quotes in object name
+ORDER BY e.expnum
+--LIMIT 10000
+"""
+
+
 # Note that tcl code can only accept years y1 to y9
 # To add more years, we'll need to fake it...
 # Scattered light ends 20140314 so y1 is a bit short and y2 is long
@@ -91,7 +127,8 @@ YEARS = odict([
     (7, [20190801,20200801]),
     (8, [20200801,20210801]),
     #(9, [20210801,20220801]),
-    (9, [20210801,20230101]),
+    #(9, [20210801,20230101]),
+    (9, [20210801,20230731]),
 ])    
 
 if __name__ == "__main__":
@@ -99,7 +136,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('-y', '--year', default=None, type=int,
                         help='year to query')
-    parser.add_argument('--db', default='sispi', choices=['sispi','delve'],
+    parser.add_argument('--db', default='sispi', choices=['sispi','delve','decade'],
                         help='database for query')
     parser.add_argument('--explist', default=None,
                         help='exposure list to select from')
@@ -108,21 +145,38 @@ if __name__ == "__main__":
     if args.db.lower() in ('sispi'):
         conn = 'postgresql://decam_reader@des61.fnal.gov:5443/decam_prd'
         QUERY = SISPI_QUERY
+        def run_query(query, conn):
+            engine = create_engine(conn)
+            return pd.read_sql_query(query,con=engine)
     elif args.db.lower() in ('delve','bliss'):
         conn = 'postgresql://des_reader@des51.fnal.gov:5432/BLISS'
         QUERY = DELVE_QUERY
+        def run_query(query, conn):
+            engine = create_engine(conn)
+            return pd.read_sql_query(query,con=engine)
+    elif args.db.lower() in ('decade'):
+        import easyaccess as ea
+        conn = ea.connect(section='decade')
+        QUERY = DECADE_QUERY
+        def run_query(query, conn):
+            df = conn.query_to_pandas(query)
+            return df
     else:
         msg = 'Unrecognized database: %s'%args.db
         raise Exception(msg)
 
-    engine = create_engine(conn)
+    #engine = create_engine(conn)
 
     for year,(start,end) in YEARS.items():
+        print("Querying year {}...".format(year))
         if (args.year is not None) and (year != args.year): 
+            print("Skipping year {}...".format(year))
             continue
             
         query = QUERY%dict(start=start,end=end)
-        df = pd.read_sql_query(query,con=engine)
+        #df = pd.read_sql_query(query,con=engine)
+        df = run_query(query,conn)
+        df.columns = df.columns.str.lower()
 
         if args.explist:
             # Only select exposures in the explist
@@ -130,7 +184,10 @@ if __name__ == "__main__":
             explist.columns= explist.columns.str.lower()
             df = df[np.in1d(df['expnum'],explist['expnum'])]
 
+        if not len(df): 
+            print("... no exposures in output file.")
+            continue
+
         outfile = 'survey-y{}.txt'.format(year)
         print("Writing {}...".format(outfile))
         df.to_csv(outfile,index=False,sep='\t')
-        if not len(df): print("... no exposures in output file.")

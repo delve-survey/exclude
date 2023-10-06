@@ -1,33 +1,36 @@
 #Nite           Exposure        Problem
-20200207        931169          Flame Nebula
-20200207        931177          Flame Nebula
-20200211        932658          Flame Nebula
-20200306        941654          Flame Nebula
-20200315        943309          Flame Nebula
 20190810        885221          NObjects 
 20190812        886055          NObjects 
 20190812        886059          NObjects 
 20190812        886061          NObjects 
-20191203        913772          NObjects
 20190915        895734          Clouds
 20190915        895735          Clouds
-20191228        923325          Telescope Moving
-20200123        926371          Telescope Moving
-20200202        929465          Ghosting
-20200316        943709          Ghosting
-20200305        941441          NObjects
-20200308        942360          NObjects
-20200201        928850          Ghosting
 20191007        901372          Mirror Issue
 20191007        901373          Mirror Issue
+20191203        913772          NObjects
 20191205        914634          Observer Marked
 20191206        915133          Observer Marked
+20191220        921300          Telescope Moving
+20191228        923325          Telescope Moving
+20200123        926369          Telescope Moving
+20200123        926370          Telescope Moving
+20200123        926371          Telescope Moving
 20200127        927274          Observer Marked
+20200201        928850          Ghosting
+20200202        929465          Ghosting
 20200205        930527          Active Optics Failed
 20200205        930558          Active Optics Failed
 20200207        931263          VSUB Off
 20200207        931264          VSUB Off
 20200207        931265          VSUB Off
+20200207        931169          Flame Nebula
+20200207        931177          Flame Nebula
+20200211        932658          Flame Nebula
+20200305        941441          NObjects
+20200306        941654          Flame Nebula
+20200308        942360          NObjects
+20200315        943309          Flame Nebula
+20200316        943709          Ghosting
 20201106        952513          Dome Obscuration
 20201120        956410          Observer Marked
 20201125        957863          Hexapod Update

@@ -1,4 +1,5 @@
 #date     expnum ccd id ccdnum
+20180901  768000 nan nan  47
 20180904  768931 nan nan  53
 20180904  768931 nan nan  54
 20180904  768931 nan nan  55
@@ -3177,3 +3178,4 @@
 20180904  769284 nan nan  61
 20180904  769284 nan nan  62
 20181229  807451 nan nan  15
+
