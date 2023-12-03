@@ -14,3 +14,5 @@
 20230110        1164383         Junk 
 20230331        1189887         Junk
 20230714        1221801         Telescope Moving
+20231202        1257015         Telescope Moving
+20231202        1257077         Telescope Moving
