@@ -3179,3 +3179,6 @@
 20180904  769284 nan nan  62
 20181229  807451 nan nan  15
 
+# Corrupted during processing
+20181212  802621 nan nan  55
+20181214  803325 nan nan  54
