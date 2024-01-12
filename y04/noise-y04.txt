@@ -14,9 +14,3 @@
 20170602  652840 nan nan  39
 20170602  652840 nan nan  45
 20170602  652840 nan nan  56
-
-# Corrupted during processing
-20160804  559665 nan nan  54
-20170306  626926 nan nan  3
-20170314  630263 nan nan  14
-

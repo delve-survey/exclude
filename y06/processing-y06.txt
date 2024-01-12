@@ -1,0 +1,4 @@
+#date     expnum ccd id ccdnum
+# Corrupted during processing
+20181212  802621 nan nan  55
+20181214  803325 nan nan  54

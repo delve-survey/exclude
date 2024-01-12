@@ -1,0 +1,9 @@
+#date     expnum ccd id ccdnum
+# Corrupted during processing
+20160804  559665 nan nan  54
+20170306  626926 nan nan  3
+20170314  630263 nan nan  14
+20161127  597144 nan nan  7 
+20171109  694581 nan nan  5
+20171115  696555 nan nan  56
+20171115  696561 nan nan  30
