@@ -1,6 +1,10 @@
 #date     expnum ccd id ccdnum
-#select nite || ' ' || expnum || ' nan N10  41' as lazarus from exposure 
-# where ((expnum > 767395 and expnum <= 769284) or (expnum >= 771163 and expnum <= 774555 )) 
+# select nite || ' ' || expnum || ' nan N10  41' as lazarus from exposure 
+# where ( 
+#  (expnum > 767395 and expnum <= 769284) or 
+#  (expnum >= 771163 and expnum <= 774555) or 
+#  (expnum >= 785517 and expnum <= 785524) 
+# )
 # and obstype = 'object' order by expnum asc;
 20180831  767526 nan N10  41
 20180831  767527 nan N10  41
@@ -3054,3 +3058,12 @@
 20180916  774553 nan N10  41
 20180916  774554 nan N10  41
 20180916  774555 nan N10  41
+20181019  785517 nan N10  41
+20181019  785518 nan N10  41
+20181019  785519 nan N10  41
+20181019  785520 nan N10  41
+20181019  785521 nan N10  41
+20181019  785522 nan N10  41
+20181019  785523 nan N10  41
+20181019  785524 nan N10  41
+

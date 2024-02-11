@@ -10,8 +10,15 @@
 20130816        226952          NObjects
 20130816        226953          NObjects
 20130816        226954          NObjects
-20131128        258479          Noisy Backplane
-20131128        258480          Noisy Backplane
+20131128        258479          Noise
+20131128        258480          Noise
 20131026        247159          Ghosting
 20140418        302366          Telescope Moving
 20140724        340594          Telescope Moving
+20130907        231492          Sky Background
+20130907        231503          Ghosting
+20130907        231517          Ghosting
+20130909        232263          Ghosting
+20130910        232799          Ghosting
+20130922        237664          Ghosting
+20131012        243431          Clouds

@@ -2,9 +2,9 @@
 20180308        728257          Orion Nebula
 20180308        728258          Orion Nebula
 20180218        723161          Arcturus
-20180413        735289          Sky/NObjects
-20180413        735362          Sky/NObjects
-20180413        735382          Sky/NObjects
+20180413        735289          Sky Background
+20180413        735362          Sky Background
+20180413        735382          Sky Background
 20180426        739472          Ghosting
 20180522        750133          NObjects
 20180522        750134          NObjects
@@ -46,3 +46,12 @@
 20180313        730116          Ghosting
 20180106        710015          Sky Background
 20180223        724779          Telescope Moving
+20170806        666270          Dome Light
+20170806        666271          Dome Light
+20170806        666307          Dome Light
+20170806        666308          Dome Light
+20170806        666311          Dome Light
+20170806        666312          Dome Light
+20170820        670009          Ghosting
+20171006        684541          NObjects 
+20171006        684543          NObjects 

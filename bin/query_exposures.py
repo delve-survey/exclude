@@ -26,7 +26,7 @@ AND filter in ('g','r','i','z') and exptime >= 30
 AND flavor = 'object' AND discard = False 
 -- AND delivered = True -- this doesn't seem necessary
 AND propid NOT IN (
-    '2012B-0001', -- DES WIDE
+    --'2012B-0001', -- DES WIDE
     '2012B-0002', -- DES SN
     '2012B-0003', -- DES SV
     '2012B-0004', -- DECAM SV SN
@@ -113,9 +113,12 @@ ORDER BY e.expnum
 """
 
 
-# Note that tcl code can only accept years y1 to y9
-# To add more years, we'll need to fake it...
-# Scattered light ends 20140314 so y1 is a bit short and y2 is long
+# NOTE: The name of the output file needs to be "y[0-9]+" where [0-9]+
+# is one or more integers (see decam/shutter.tcl).  If year is 'y0' or
+# 'y1', the ray tracing will try to run scattered light (which we
+# usually don't want). This should be used for exposures taken before
+# 2014-03-14
+
 YEARS = odict([
     (0, [20121024,20130801]), 
     (1, [20130801,20140314]), 
@@ -126,9 +129,11 @@ YEARS = odict([
     (6, [20180801,20190801]),
     (7, [20190801,20200801]),
     (8, [20200801,20210801]),
-    #(9, [20210801,20220801]),
     #(9, [20210801,20230101]),
-    (9, [20210801,20230731]),
+    #(9, [20210801,20230731]),
+    (9, [20210801,20220801]),
+    (10,[20220801,20230801]),
+    (11,[20230801,20240801]),
 ])    
 
 if __name__ == "__main__":
@@ -143,18 +148,21 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     if args.db.lower() in ('sispi'):
+        print("SISI query...")
         conn = 'postgresql://decam_reader@des61.fnal.gov:5443/decam_prd'
         QUERY = SISPI_QUERY
         def run_query(query, conn):
             engine = create_engine(conn)
             return pd.read_sql_query(query,con=engine)
     elif args.db.lower() in ('delve','bliss'):
+        print("DELVE query...")
         conn = 'postgresql://des_reader@des51.fnal.gov:5432/BLISS'
         QUERY = DELVE_QUERY
         def run_query(query, conn):
             engine = create_engine(conn)
             return pd.read_sql_query(query,con=engine)
     elif args.db.lower() in ('decade'):
+        print("DECADE query...")
         import easyaccess as ea
         conn = ea.connect(section='decade')
         QUERY = DECADE_QUERY
@@ -184,8 +192,8 @@ if __name__ == "__main__":
             explist.columns= explist.columns.str.lower()
             df = df[np.in1d(df['expnum'],explist['expnum'])]
 
+        print("... {} exposures in output file.".format(len(df)))
         if not len(df): 
-            print("... no exposures in output file.")
             continue
 
         outfile = 'survey-y{}.txt'.format(year)

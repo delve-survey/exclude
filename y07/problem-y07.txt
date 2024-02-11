@@ -3,6 +3,14 @@
 20190812        886055          NObjects 
 20190812        886059          NObjects 
 20190812        886061          NObjects 
+20190817        887853          Dome Light
+20190817        887854          Dome Light
+20190817        887855          Dome Light
+20190817        887856          Dome Light
+20190817        887857          Dome Light
+20190817        887858          Dome Light
+20190817        887880          Dome Light
+20190817        887894          Dome Light
 20190915        895734          Clouds
 20190915        895735          Clouds
 20191007        901372          Mirror Issue
@@ -31,9 +39,18 @@
 20200308        942360          NObjects
 20200315        943309          Flame Nebula
 20200316        943709          Ghosting
+20201029        950134          Bad Astrometry
+20201029        950135          Bad Astrometry
+20201029        950137          Bad Astrometry
+20201029        950138          Bad Astrometry
+20201101        950922          Bad Astrometry
+20201102        951209          Bad Astrometry
 20201106        952513          Dome Obscuration
 20201120        956410          Observer Marked
+20201121        956764          Sky Background
 20201125        957863          Hexapod Update
 20201125        958045          Hexapod Update
 20201125        958050          Hexapod Update 
 20201125        958055          Hexapod Update 
+20201118        955722          Sky Background
+20201118        955746          Sky Background

@@ -7,8 +7,6 @@
 20201119        956063          Flame Nebula
 20201121        956767          Flame Nebula
 20201121        956768          Flame Nebula
-20210205        963888          Flame Nebula
-20210425        989307          Wonky
 20201024        948472          Rigel 
 20201118        955650          Ghosting
 20201118        955704          Rigel 
@@ -22,13 +20,7 @@
 20201121        956765          Orion Nebula
 20201121        956767          Flame Nebula
 20201121        956768          Flame Nebula
-20210524        1001060         Ghosting
 20210125        960160          Wonky
-20210425        989237          Wonky
-20210425        989239          Wonky
-20210425        989240          Wonky
-20210425        989245          Wonky
-20210425        989246          Wonky
 20210201        962769          Hexapod Update 
 20210201        962774          Hexapod Update 
 20210201        962779          Hexapod Update
@@ -37,6 +29,7 @@
 20210205        963873          Hexapod Update 
 20210205        963878          Hexapod Update 
 20210205        963889          Hexapod Update
+20210205        963888          Flame Nebula
 20210219        966606          Telescope Tracking 
 20210219        966607          Telescope Tracking 
 20210219        966608          Telescope Tracking 
@@ -69,7 +62,16 @@
 20210219        966643          Telescope Tracking 
 20210219        966644          Telescope Tracking 
 20210219        966645          Telescope Tracking 
-20220207        1078687         Power Outage
+20210302        970771          Bad Astrometry
+20210425        989237          Wonky
+20210425        989239          Wonky
+20210425        989240          Wonky
+20210425        989245          Wonky
+20210425        989246          Wonky
+20210425        989307          Wonky
+20210524        1001060         Ghosting
 20210717        1017270         Scattered Light
-20210817        1026572         Scattered Light
-20210921        1035870         Ghosting
+20210722        1018980         Clouds
+20210722        1018981         Clouds
+20210722        1018997         Clouds
+20210722        1019116         Clouds

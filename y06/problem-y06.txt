@@ -39,3 +39,4 @@
 20190101        808249          Sky Background
 20190102        808551          Sky Background
 20190627        868123          High Wind
+20180809        763747          Sky Background

@@ -18,6 +18,7 @@
 20160111        510466          Achernar
 20160209        515735          Canopus
 20160525        545296          NObjects
+20160525        545306          Dome Light
 20160525        545357          NObjects
 20151022        486781          NObjects
 20151105        490402          NObjects

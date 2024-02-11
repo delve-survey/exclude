@@ -1,15 +1,32 @@
 #Nite           Exposure        Problem
+20220824        1125194         Dome Light
+20220825        1125200         Dome Light
 20220902        1129120         Out of Focus
 20220903        1129817         Ghosting
 20220903        1129818         Ghosting
+20220904        1130525         Dome Light
+20220904        1130526         Dome Light
 20220909        1132549         Out of Focus
 20220909        1132553         Out of Focus
+20220913        1134442         Dome Light
+20221013        1141196         Dome Light
+20221013        1141201         Dome Light
 20221015        1141836         Junk 
-20221016        1141836         Junk      
+20221016        1142121         Dome Light
+20221016        1142122         Dome Light
+20221016        1142123         Dome Light
+20221016        1142126         Sky Background
+20221016        1142127         Sky Background
 20221016        1141837         Junk
+20221022        1143325         Sky Background
+20221022        1143326         Dome Light
+20221022        1143328         Sky Background
+20221025        1144123         Sky Background
+20221028        1144865         Ghosting
 20221217        1156998         Junk 
 20221217        1156999         Junk 
 20221225        1159486         Telescope Moving
+20230104        1162362         Sky Background
 20230107        1163320         Junk 
 20230110        1164383         Junk 
 20230331        1189887         Junk

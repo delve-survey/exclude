@@ -2,5 +2,37 @@
 20210816        1026168         Ghosting
 20210817        1026566         Ghosting
 20210817        1026593         Ghosting
+20210817        1026572         Scattered Light
+20210919        1035078         Dome Light
+20210919        1035080         Dome Light
+20210919        1035090         Dome Light
+20210920        1035623         Telescope Moving
+20210921        1035870         Ghosting
+20210922        1036392         Dome Light
+20210922        1036393         Dome Light
+20210922        1036394         Dome Light
+20210922        1036395         Dome Light
+20210922        1036396         Dome Light
+20210922        1036397         Dome Light
+20210922        1036398         Dome Light
+20210922        1036399         Dome Light
+20210922        1036402         Dome Light
+20210922        1036403         Dome Light
+20210922        1036440         Dome Light
+20210922        1036365         Dome Light
+20210925        1037438         Sky Background
+20210925        1037439         Sky Background
+20211019        1044239         Dome Light
+20211019        1044257         Dome Light
+20211019        1044276         Dome Light
+20211019        1044278         Dome Light
+20211019        1044280         Dome Light
+20211019        1044282         Dome Light
+20211019        1044286         Dome Light
+20211115        1051975         Dome Light
 20211223        1065643         NObjects
+20220123        1075463         Clouds
+20220123        1075469         Clouds
 20220108        1070324         Guider Failed
+20220207        1078687         Power Outage
+20220612        1105363         Sky Background
