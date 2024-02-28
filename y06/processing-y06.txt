@@ -2,3 +2,7 @@
 # Corrupted during processing
 20181212  802621 nan nan  55
 20181214  803325 nan nan  54
+# PSF fit failure
+20180901  768052 nan nan  31
+20190830  892152 nan nan  38
+

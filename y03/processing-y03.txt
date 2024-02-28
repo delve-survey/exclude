@@ -1,0 +1,4 @@
+#date     expnum ccd id ccdnum
+# PSF fit failure
+20151226  505984 nan nan  31
+20151227  506276 nan nan  46

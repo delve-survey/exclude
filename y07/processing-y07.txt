@@ -1,0 +1,3 @@
+#date     expnum ccd id ccdnum
+# PSF fit failure
+20191221  921464 nan nan  

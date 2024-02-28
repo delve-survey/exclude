@@ -1,0 +1,3 @@
+#date     expnum ccd id ccdnum
+# PSF failure
+20131104  250897 nan nan  49

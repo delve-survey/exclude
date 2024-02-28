@@ -7,3 +7,5 @@
 20171109  694581 nan nan  5
 20171115  696555 nan nan  56
 20171115  696561 nan nan  30
+# PSF fit failure
+20161022  585235 nan nan  56

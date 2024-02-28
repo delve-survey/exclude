@@ -15,6 +15,9 @@
 20180723        758328          NObjects 
 20180726        759394          NObjects 
 20170805        665994          NObjects 
+20170806        666270          Dome Light
+20170806        666271          Dome Light
+20170806        666292          Dome Light
 20170806        666293          NObjects 
 20170806        666294          NObjects 
 20170806        666295          NObjects 
@@ -23,6 +26,42 @@
 20170806        666298          NObjects 
 20170806        666299          NObjects 
 20170806        666300          NObjects 
+20170806        666301          Dome Light
+20170806        666302          Dome Light
+20170806        666303          Dome Light
+20170806        666304          Dome Light
+20170806        666305          Dome Light
+20170806        666306          Dome Light
+20170806        666307          Dome Light
+20170806        666308          Dome Light
+20170806        666309          Dome Light
+20170806        666310          Dome Light
+20170806        666311          Dome Light
+20170806        666312          Dome Light
+20170806        666313          Dome Light
+20170806        666314          Dome Light
+20170806        666315          Dome Light
+20170806        666316          Dome Light
+20170806        666317          Dome Light
+20170806        666318          Dome Light
+20170806        666319          Dome Light
+20170806        666320          Dome Light
+20170806        666321          Dome Light
+20170806        666322          Dome Light
+20170806        666336          Dome Light
+20170806        666341          Dome Light
+20170806        666342          Fringing
+20170806        666343          Fringing
+20170806        666344          Dome Light
+20170806        666345          Dome Light
+20170806        666346          Dome Light
+20170806        666347          Dome Light
+20170806        666348          Dome Light
+20170806        666349          Fringing
+20170806        666350          Dome Light
+20170806        666353          Dome Light
+20170806        666357          Dome Light
+20170806        666358          Dome Light
 20170918        679251          Alnair          
 20170926        682166          Achernar
 20170926        682170          Achernar
@@ -46,12 +85,6 @@
 20180313        730116          Ghosting
 20180106        710015          Sky Background
 20180223        724779          Telescope Moving
-20170806        666270          Dome Light
-20170806        666271          Dome Light
-20170806        666307          Dome Light
-20170806        666308          Dome Light
-20170806        666311          Dome Light
-20170806        666312          Dome Light
 20170820        670009          Ghosting
 20171006        684541          NObjects 
 20171006        684543          NObjects 

@@ -1,0 +1,6 @@
+#Nite           Exposure        Problem
+20230826        1235217         Sky Background
+20230829        1236510         Ghosting
+20231004        1245074         Ghosting
+20231016        1247857         Clouds
+20231022        1249667         Nebula
