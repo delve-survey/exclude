@@ -1,6 +1,6 @@
 # DECam Exclude Lists
 
-Assemble lists of bad/suspect DECam data to exclude from high-level processing. These lists are collected using a number of techniques, including visual inspection. These lists follow the same format as the DES exclusion lists found [here](https://des-ops.fnal.gov:8082/exclude/).
+Assemble lists of bad/suspect DECam images to exclude from high-level processing. These lists are collected using a number of techniques including an automated ray-tracing procedure and visual inspection. These lists follow the same format as the DES exclusion lists found [here](https://github.com/des-science/exclude_list).
 
 ## Execution
 
